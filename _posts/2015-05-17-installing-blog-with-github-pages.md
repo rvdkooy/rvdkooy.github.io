@@ -18,32 +18,63 @@ I was looking for an easy way to setup a blog and off course there was the obvio
 
 Github has to ability to serve a static website for you which is called github pages. You basically set up a repository and you can use git to pull, push, commit, branch and merge to get your files into that repository and Github takes care of serving those files.
 
-Static files? isn't that something that we use 20 years ago?? 
-Well yes, but we have much better tooling these days to make it look like a dynamically generated website. Jekyll is such a tool. It uses tool like:
+Static files? isn't that something that we used 20 years ago?? 
 
-- Liquid to generate your HTML files
-- SASS to compile your css files
-- Markdown to create articles
-
-On top of that it comes with a local webserver and file watcher to kick off the tooling to generate the entire website for you.
-
-So when I want to create a new blog post, I only have to create a markdown file, put it in the correct folder (_posts) with some predefined values and a new article will apear on my website.
-
-I only have to commit this file and push it to my github pages repository and after a minute or so the article will also be available online.
+Well yes, but we have much better tooling these days to make it look like a dynamically generated website. Jekyll is such a tool. It is a static website generator which uses conventions and tools like Liquid, SASS and markdown to generate your website.
 
 **Installation**
 
 ***Setting up Github pages***
+There are two ways to setup github pages:
+You can create a repository and name it: username.github.io, go to the settings of the repo and use the site generator where you can pick some nice themes and generate articles.
 
-***Getting a template***
+or you can browse the internet for more templates ([this is a nice one](http://jekyllthemes.org))
+go to the authors github page, fork the repo, rename it to username.github.io and clone it locally to start creating articles or make some adjustments in the theme. I did the latter.
 
 ***Installing Jekyll***
+So now you have a clone of the theme on your local drive, we now have to install Jekyll to generate the site and some articles.
+
+Jekyll comes as a ruby gem/package and therefore we have to install ruby and the ruby devkit. For installation guidance for your OS go to [here](https://www.ruby-lang.org/en/documentation/installation/)
+
+
+install Jekyll:
+
+{% highlight c %}
+
+gem install jekyll
+
+{% endhighlight %}
+
+For a more complete Jekyll Guidance go to the [documentation](http://jekyllrb.com/docs/installation/)
+
+browse to your cloned github pages repo and type:
+
+{% highlight c %}
+
+jekyll serve --watch
+
+{% endhighlight %}
+
+This will:
+
+- Generate a folder with the name "_site" in the which will contain your complete compiled website
+- Start up a webserver running on port 4000 (default), where you can access your website.
+- Watch for changes and regenerate the _site folder again when a file change occurs, this is partically handy when you are making changes and you want to see them immediately when you refresh you browser.
+
+
 
 **Creating a post**
+
+So when I want to create a new blog post, I only have to create a markdown file, put it in the _posts with 
+and a new article will apear on my website.
+
+I only have to commit this file and push it to my github pages repository and after a minute or so the article will also be available online.
 
 **Customizations**
 
 **links**
+
+
 
 
 
