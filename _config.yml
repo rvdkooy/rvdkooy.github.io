@@ -5,7 +5,6 @@ subheading: "Mostly blogging about tech stuff.."
 more: "more"
 url: "http://www.vdkooy.com"
 #baseurl: "/contrast" # comment out if in root directory
-highlighter: rouge
 comments:
     disqus: "rvdkooy"
 #    isso: "comments.mysite.org"
@@ -32,5 +31,3 @@ links:
 
 excerpt_separator: "\n\n\n"
 defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
-gems:
-- rouge

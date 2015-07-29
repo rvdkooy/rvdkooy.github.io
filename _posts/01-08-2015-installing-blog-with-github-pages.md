@@ -45,45 +45,39 @@ So now you have a clone of your github page on your local drive, we now have to 
 
 Jekyll comes as a ruby gem/package and therefore we have to install ruby and the ruby devkit first. Getting ruby and the devkit working on a windows machine is not very straightforward as I was expecting, so these are the steps that I had to follow to get it working on my machine:
 
-{% highlight text %}
-
+{% highlight c %}
 cinst ruby
 cinst ruby2.devkit
-cd c:\tools\devkit
+{% endhighlight %}
+
+goto the c:\tools\devkit folder and type:
+
+{% highlight text %}
 ruby dk.rb init
 
 edit the file config.yml and add below the 3 dashes:
 - C:\tools\ruby21
 
 ruby dk.rb install 
-
 {% endhighlight %}
 
-now install Jekyll:
+This will configure the ruby devkit, which we need to be able to run Jekyll.
+
+Now install Jekyll:
 
 {% highlight c %}
-
 gem install jekyll
-
 {% endhighlight %}
 
-For code snippets in my articles I use text highlighting in my markdown files. This is parsed by Pygments which is depending on Python. Because I don't want to depend on all these development environments I decided to use Rouge to parse my highlighted text, which is build on top of ruby. To change this I had to install Rouge first and configure Jelyll to use the Rouge parser to parse my highlighted text snippets.
+For code snippets in my articles I use text highlighting in my markdown files. This is parsed by the Jekyll plugin Pygments.rb which is depending on Python. We now need to install python2 (pygments.rb gem does not work with Python3)
 
 {% highlight c %}
 
-gem install rouge
+cinst python2
 
 {% endhighlight %}
 
-Open your Jekyll _config.yml file (it is in the root of your website) and add the following line:
-
-{% highlight yml %}
-
-highlighter: rouge
-
-{% endhighlight %}
-
-With this, you should be ready to start, now type:
+With this, you should be ready to start, now from your website root folder type:
 
 {% highlight c %}
 
@@ -91,17 +85,27 @@ jekyll serve --watch
 
 {% endhighlight %}
 
-from your website root folder
-
 This will:
 
-- Generate a folder with the name "_site" which will contain your compiled website.
+- Generate a folder "_site" which will contain your compiled website.
 - Start up a webserver running on port 4000 (default), where you can access your website.
 - Watch for changes and regenerate the _site folder again when a file change occurs, this is partically handy when you are making changes and you want to see them immediately when you refresh you browser.
 
 **Creating a post**
 
-So when I want to create a new blog post, I only have to create a markdown file with the following format: YYYY-MM-DD-title.md, put it in the _posts folder and Jekyll takes care of the rest. 
+So when I want to create a new blog post, I only have to 
+
+- create a markdown file in the _posts folder with the following format: YYYY-MM-DD-title.md, 
+- start your file with some meta data: 
+{% highlight c %}
+---
+title:  "Installing a blog with github pages"
+date:   2015-08-01 21:00:00
+categories: tech
+---
+{% endhighlight %}
+
+and Jekyll takes care of the rest. 
 
 now when I look in the _sites folder I see a generated html file:
 
@@ -109,16 +113,17 @@ now when I look in the _sites folder I see a generated html file:
 
 this file is the actual file that will be served to the visitors of your website.
 
+you can check this when you open your browser and go to: http://localhost:4000
+
 **Publish to github**
 
-This part is really easy:
-It uses Git, so I only have to commit and push my changes to my github repo to publish it.
+So when you article is ready to be published, you use git commands:
 
 {% highlight c %}
 
-git add --all
-git commit -m "my first article, yeah"
-git push
+git add --all // stages all your changed files
+git commit -m "my first article, yeah" // creates a commit with a message
+git push // pushes the changes to github
 
 {% endhighlight %}
 
