@@ -1,11 +1,11 @@
-title: "rvdkooy"
+title: "Ronald vd Kooij's blog"
 author: "Ronald van der Kooij"
-description: "My website where I mostly try to blog about tech stuff that I', doing"
+description: "My website where I mostly try to blog about tech stuff."
 subheading: "Mostly blogging about tech stuff.."
 more: "more"
 url: "http://www.vdkooy.com"
 #baseurl: "/contrast" # comment out if in root directory
-
+highlighter: rouge
 comments:
     disqus: "rvdkooy"
 #    isso: "comments.mysite.org"
