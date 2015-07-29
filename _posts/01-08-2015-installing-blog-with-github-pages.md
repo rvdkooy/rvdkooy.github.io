@@ -116,7 +116,7 @@ It uses Git, so I only have to commit and push my changes to my github repo to p
 
 {% highlight c %}
 
-git add .
+git add --all
 git commit -m "my first article, yeah"
 git push
 
