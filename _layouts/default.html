@@ -1,13 +1,25 @@
 ---
 layout: blank
 ---
+    <style>
+      .twitter-share-button[style] { 
+        margin-top: 5px;
+        vertical-align: text-bottom !important; 
+      }
+    </style>
     <article>
       <header>
         <h2><a href="{{ page.url | prepend: site.baseur }}">{{ page.title }}</a></h2>
         <p>{% if page.author %}{{ page.author }} • {% endif %}{% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% endif %}{% if page.categories %} • {{ page.categories | array_to_sentence_string }}{% endif %}</p>
       </header>
       <div>
-{{ content }}
+        {{ content }}
+
+        <div class="fb-share-button" data-href="{{ page.url }}" data-layout="button_count"></div>
+        <div>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-via="rvdkooy">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
       </div>
       {% if site.comments.isso and page.comments %}
       <div id="isso-thread"></div>
