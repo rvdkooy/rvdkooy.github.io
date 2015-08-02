@@ -27,8 +27,9 @@ So let's get started:
 ***Requirements***
 
 These are the settings that I use:
+
 - Windows machine
-- Chocolatery installed
+- [Chocolatery](https://chocolatey.org/) installed
 - A texteditor which has good support for markdown (I use sublime with the markdown preview plugin)
 
 ***Setting up Github pages***
@@ -115,9 +116,11 @@ this file is the actual file that will be served to the visitors of your website
 
 you can check this when you open your browser and go to: http://localhost:4000
 
+for more information about creating articles with markdown check [the github markdown basics](https://help.github.com/articles/markdown-basics/) or this  [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 **Publish to github**
 
-So when you article is ready to be published, you use git commands:
+So when you article is ready to be published, you can use the following git commands:
 
 {% highlight c %}
 
@@ -131,4 +134,4 @@ If you wait a minute or so, github will pick up your changes and compiles you we
 
 Well that's all there is!!
 
-If you have any comments, write them below or twitter me at ([@rvdkooy](https://twitter.com/rvdkooy))
+If you have any comments, write them below or you tweet me at ([@rvdkooy](https://twitter.com/rvdkooy))
