@@ -3,7 +3,7 @@ author: "Ronald van der Kooij"
 description: "My website where I blog about tech stuff."
 subheading: "Mostly blogging about tech stuff.."
 more: "more"
-url: "www.vdkooy.com"
+url: "http://www.vdkooy.com"
 googleAnalytics:
     trackingid: "UA-65807711-1"
 #baseurl: "/contrast" # comment out if in root directory
