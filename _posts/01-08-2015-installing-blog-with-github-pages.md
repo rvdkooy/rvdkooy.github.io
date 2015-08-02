@@ -2,7 +2,11 @@
 title:  "Installing a blog with github pages"
 date:   2015-08-01 21:00:00
 categories: tech
+description: This is the first article that I'm writing for my new blog. What better topic than explaining how I installed it with the use of github pages and the Jykell static site generator?
+image: /assets/img/installing-blog-with-github-pages/octojekyll.png
 ---
+
+![alt text](/assets/img/installing-blog-with-github-pages/octojekyll.png "Okto Jekyll")
 
 **Intro**
 
