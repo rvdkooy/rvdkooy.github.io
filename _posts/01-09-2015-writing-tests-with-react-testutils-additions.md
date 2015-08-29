@@ -8,19 +8,20 @@ image: /assets/img/writing-tests-with-react-testutils-additions/react-header.png
 <div style="text-align:center">
 <img src="/assets/img/writing-tests-with-react-testutils-additions/react-header.png" alt="ReactJs" width="300px" >
 </div>
-I'm currently working on a project that involves replacing a classic webforms application to a new/modern frontend stack. The frontend is pretty complicated: it is highly configurable, contains lots of workflows and has components that interact with each other, so I decided to use ReactJs with a Flux implementation next to it. 
+I'm currently working on a project where we have to replacing a classic webforms application to a new/modern frontend stack. 
+The frontend is pretty complicated: it is highly configurable, contains lots of workflows and the components have to interact a lot with each other. For that reason, I decided to use ReactJs with a Flux implementation next to it.
 
-ReactJs is an awesome library to build your UI with, because:
+I think that ReactJs is an awesome library to build your UI with, because:
 
 - You can componentize everything.
-- It combines markup with Js (if you thing about it, it makes so much sense!!)
+- It combines markup with Js (if you think about it, it makes so much sense!!)
 - It's fast.
 - It is easy to learn.
-- It's only a UI library, so you can use whatever you want next to it.
-- ReactJs and Flux complement each other so well.
-- It comes with Testhelpers to test you components.
+- It's only a view library, so you can use whatever you want next to it.
+- ReactJs and Flux complement each other very well.
+- It comes with Testhelpers to test your components in the DOM.
 
-Althought the testhelpers are great, the API made our tests look a bit cluncky. Let's show that with an example:
+Although the testhelpers are great, the API made our tests look a bit clunky. Let's show that with an example:
 
 {% highlight javascript %}
 // first render it into the document
