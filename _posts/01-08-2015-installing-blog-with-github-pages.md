@@ -149,4 +149,4 @@ When my DNS was setup successfully (wait  max 24 hours), I was able to access my
 
 Well that's all there is!!
 
-If you have any comments, write them below or you tweet me at ([@rvdkooy](https://twitter.com/rvdkooy))
+If you have any comments, write them below or you can tweet me at ([@rvdkooy](https://twitter.com/rvdkooy))
