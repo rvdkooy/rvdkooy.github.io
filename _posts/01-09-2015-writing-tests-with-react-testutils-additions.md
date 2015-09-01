@@ -6,7 +6,7 @@ description: This article will show one of the great features of react-testutils
 image: /assets/img/writing-tests-with-react-testutils-additions/react-header.png
 ---
 <div style="text-align:center">
-<img src="/assets/img/writing-tests-with-react-testutils-additions/react-header.png" alt="ReactJs" width="300px" >
+<img src="/assets/img/writing-tests-with-react-testutils-additions/react-header.jpg" alt="ReactJs" width="300px" >
 </div>
 I'm currently working on a project where we have to replace a classic webforms application to a new/modern front-end stack. 
 The frontend is pretty complicated: it is highly configurable, contains lots of workflows and the components have to interact a lot with each other. For that reason, I decided to use ReactJs with a Flux implementation next to it.
