@@ -2,7 +2,7 @@
 title:  "Writing tests with react-testutils-additions"
 date:   2015-09-01 21:00:00
 categories: tech
-description: test
+description: This article will show one of the great features of react-testutils-additions, finding your components with CSS selectors!
 image: /assets/img/writing-tests-with-react-testutils-additions/react-header.png
 ---
 <div style="text-align:center">
