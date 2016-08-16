@@ -11,8 +11,12 @@
     <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.description }}" />
-    <meta property="og:image" content="{{ page.image | prepend: site.url }}" />
-    <meta property='og:video' content="{{ page.video | ''}}" />
+    {% if page.image %}
+      <meta property="og:image" content="{{ page.image | prepend: site.url }}" />
+    {% endif %}
+    {% if page.video %}
+      <meta property='og:video' content="{{ page.video | ''}}" />
+    {% endif %}
     <title>{% if page.title %} {{ page.title }} › {% endif %}{{ site.title }}</title>
     <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url}}">
     <link href="{{ "/main.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
