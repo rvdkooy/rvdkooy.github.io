@@ -3,7 +3,7 @@ title:  "Writing your own viewframework that uses a virtual DOM"
 date:   2016-08-16 21:00:00
 categories: tech
 description: In this article I will describe the reasoning of writing my own javascript viewframework that was inspired by ReactJS
-video: http://www.youtube.com/v/vFfNagXrx0k
+video: https://www.youtube.com/v/vFfNagXrx0k
 ---
 
 Writing your own view framework, really? why do you want to do that?
@@ -12,7 +12,7 @@ Writing your own view framework, really? why do you want to do that?
 Well, for more than a year now I've been working on a large project where I decided to use ReactJs for building the web frontend.
 Building and composing the UI with components that will rerender when state changes with ReactJS is a great paradigm and it turned out to be a very good choice for us.
 
-So, I really wanted to know how all of this worked and after analyzing their source code on github (that was not easy to grasp btw), I decided to build a similar thing by myself to truly understand the concept.
+So, I really wanted to know how all of this worked and aftere analyzing their source code on github (that was not easy to grasp btw), I decided to build a similar thing by myself to truly understand the concept.
 
 I named my view framework 'Reren' and after several tries, I now have a 'version' that contains the basic building blocks for creating and composing components that can have its own state and rerenders when it changes with the help of my own virtual DOM.
 
