@@ -3,7 +3,7 @@ title:  "Writing your own viewframework that uses a virtual DOM"
 date:   2016-08-16 21:00:00
 categories: tech
 description: In this article I will describe the reasoning of writing my own javascript viewframework that was inspired by ReactJS
-video: https://www.youtube.com/v/vFfNagXrx0k
+video: https://www.youtube.com/embed/vFfNagXrx0k
 ---
 
 Writing your own view framework, really? why do you want to do that?
